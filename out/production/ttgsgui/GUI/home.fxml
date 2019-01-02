@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainframe" maxHeight="505" maxWidth="610.0" minHeight="500" minWidth="596.0" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.homeController">
+   <children>
+      <VBox fx:id="subjectBox" layoutX="120.0" layoutY="205.0" style="-fx-border-color: #311b92; -fx-border-width: 2; -fx-border-radius: 13;" visible="false">
+         <children>
+            <HBox prefHeight="79.0" prefWidth="464.0">
+               <children>
+                  <Label style="-fx-text-fill: #000;" stylesheets="@../Assets/dark-theme.css" text="Subject" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="7.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" right="20.0" top="32.0" />
+                     </padding>
+                  </Label>
+                  <JFXTextField fx:id="subname" labelFloat="true" prefHeight="48.0" prefWidth="202.0" promptText="Name">
+                     <padding>
+                        <Insets top="32.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <JFXCheckBox fx:id="lab" checkedColor="#311b92" prefHeight="18.0" prefWidth="50.0" text="Lab" unCheckedColor="#4a4848">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" top="32.0" />
+                     </HBox.margin>
+                  </JFXCheckBox>
+                  <JFXButton fx:id="subadd" alignment="CENTER" buttonType="RAISED" mnemonicParsing="false" onAction="#subadding" prefHeight="39.0" prefWidth="50.0" stylesheets="@../Assets/dark-theme.css" text="Add">
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox layoutX="11.0" layoutY="11.0" prefHeight="79.0" prefWidth="464.0">
+               <children>
+                  <JFXTextField fx:id="subcode" labelFloat="true" layoutX="160.0" layoutY="10.0" prefHeight="48.0" prefWidth="67.0" promptText="Code">
+                     <padding>
+                        <Insets top="32.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="85.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="subminhrs" labelFloat="true" prefHeight="48.0" prefWidth="58.0" promptText="Min hours">
+                     <padding>
+                        <Insets top="32.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="15.0" right="20.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="profname" labelFloat="true" prefHeight="48.0" prefWidth="115.0" promptText="Professor Name">
+                     <padding>
+                        <Insets top="32.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <JFXButton fx:id="finish" alignment="CENTER" buttonType="RAISED" mnemonicParsing="false" onAction="#finishing" prefHeight="39.0" prefWidth="50.0" stylesheets="@../Assets/dark-theme.css" text="Finish">
+                     <HBox.margin>
+                        <Insets left="3.0" top="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="119.0" layoutY="96.0" prefHeight="84.0" prefWidth="464.0" style="-fx-border-color: #311b92; -fx-border-radius: 10; -fx-border-width: 2;">
+         <children>
+            <Label prefHeight="17.0" prefWidth="38.0" style="-fx-text-fill: #000;" stylesheets="@../Assets/dark-theme.css" text="Class " textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets top="32.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="20.0" right="30.0" />
+               </HBox.margin>
+            </Label>
+            <JFXComboBox fx:id="branch" prefHeight="44.0" prefWidth="81.0" promptText="Branch">
+               <padding>
+                  <Insets top="25.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" right="30.0" />
+               </HBox.margin>
+            </JFXComboBox>
+            <JFXComboBox fx:id="classYear" prefHeight="48.0" prefWidth="64.0" promptText="Year">
+               <padding>
+                  <Insets top="25.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="20.0" right="30.0" />
+               </HBox.margin>
+            </JFXComboBox>
+            <JFXButton fx:id="classadd" alignment="CENTER" buttonType="RAISED" onAction="#classadding" prefHeight="39.0" prefWidth="50.0" stylesheets="@../Assets/dark-theme.css" text="Add">
+               <HBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children></HBox>
+      <JFXButton fx:id="generate" alignment="CENTER" buttonType="RAISED" layoutX="268.0" layoutY="425.0" mnemonicParsing="false" onAction="#generating" prefHeight="51.0" prefWidth="149.0" stylesheets="@../Assets/dark-theme.css" text="GENERATE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <HBox layoutY="-2.0" prefHeight="39.0" prefWidth="600.0" stylesheets="@../Assets/dark-theme.css">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="599.0" style="-fx-text-fill: #fff;" text="Time Table" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutY="38.0" prefHeight="463.0" prefWidth="100.0" style="-fx-background-color: #eee;">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #aaa;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;" text="NEW">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <JFXButton alignment="CENTER" onAction="#viewing" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #000;" text="VIEW">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <JFXButton alignment="CENTER" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #000;" text="UPDATE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <JFXButton alignment="CENTER" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #000;" text="DELETE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

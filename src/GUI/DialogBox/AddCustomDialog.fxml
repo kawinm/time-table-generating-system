@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="99.0" minWidth="186.0" prefHeight="100.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.DialogBox.AddCustomDialogController">
+   <children>
+      <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="200.0" text="Subject Added Successfully!!!" />
+   </children>
+</AnchorPane>

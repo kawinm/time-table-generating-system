@@ -1,0 +1,3 @@
+studentgroups
+cde(i) cs1 25 kkkk
+end

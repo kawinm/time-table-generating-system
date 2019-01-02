@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ttgsgui:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ttgsgui_jar</output-path>
+    <root id="archive" name="ttgsgui_jar.jar">
+      <element id="module-output" name="ttgsgui" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/h2-1.4.197.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jfoenix-9.0.8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

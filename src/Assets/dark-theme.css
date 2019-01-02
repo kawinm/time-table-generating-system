@@ -1,0 +1,16 @@
+.jfx-button {
+    -fx-background-color: #311b92;
+    -fx-text-fill: #fff;
+}
+
+.jfx-button:hover {
+    -fx-background-color: #2962FF;
+}
+
+HBox {
+-fx-background-color: #311b92;
+}
+
+.label {
+    -fx-text-fill: #000;
+}
